@@ -67,11 +67,12 @@ int main() // aplikasi utama
         warning.close();
         error.close();
         information.close();
-        log.close();
     }else{
         // jika file log gagal dibuka
         cout<<"File Log tidak ditemukan"<<endl;
     }
+    // tutup file event_log
+    log.close();
     // program berakhir
     system("pause>0");
 }
