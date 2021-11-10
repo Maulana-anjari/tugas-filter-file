@@ -21,9 +21,9 @@ int main() // aplikasi utama
         // while untuk loop isi text per baris dari file log
         while (getline(log, line)){ // fungsi getline untuk membaca semua baris file satu-persatu sampai akhir
                 // bagian ini untuk mencari suatu kata di tiap baris, fungsinya untuk memilah
-                size_t info = line.find("Information");
-                size_t warn = line.find("Warning");
-                size_t err = line.find("Error");
+                size_t info = line.find("Information,");
+                size_t warn = line.find("Warning,");
+                size_t err = line.find("Error,");
                 // cek apakah di baris itu benar ada kata Information
                 if(info!=string::npos)
                 {
